@@ -1,10 +1,14 @@
 <template>
-  <div>Home-Qx-Lw-Fb</div>
+  <county-content></county-content>
 </template>
 
 <script>
+import CountyContent from './Content'
 export default {
-  name: 'Home-Qx-Lw-Fb'
+  name: 'Home-Qx-Lw-Fb',
+  components: {
+    CountyContent
+  }
 }
 </script>
 
