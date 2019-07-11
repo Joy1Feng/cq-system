@@ -31,14 +31,15 @@ export default {
     border-left:1px solid
     border-top:1px solid
     .detail
+      height 100%
       display flex
       flex-direction column
       align-items center
-      color: #ffffff
+      justify-content space-between
       .detail-num
-        font-size 16px
+        font-size 20px
       .detail-title
-        font-size 24px
+        font-size 18px
     .inner-box
       position: absolute
       &.inner-box-1

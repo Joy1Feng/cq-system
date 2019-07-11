@@ -25,7 +25,7 @@ export default {
     border 1px solid #055866
     position: relative
     box-sizing border-box
-    background-color $box-bgColor
+    background-color $boxCorner-bgColor
     padding 10px 16px
     .inner-box
       position absolute

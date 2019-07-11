@@ -17,15 +17,20 @@
         <box-title class="box-title" text="基本信息"></box-title>
         <div class="inner-content">
           <box-rect
-            :style="{borderColor: '#01ffff',width: '166px',height:'247px'}"
+            :style="{borderColor: '#01ffff',minWidth: '166px',height:'247px'}"
             :rectStyle="{left: '0',top: '0',width:'16px',height:'16px',backgroundColor:'#01ffff'}"
             :countyMain="countyMain"
           >
           </box-rect>
           <div class="content-right">
-            <!--<box-inset v-for="(item,index) in contentClassify" :key="index" :customStyle="item.customStyle" :num="item.num" :title="item.title"></box-inset>-->
+            <box-inset v-for="(item,index) in contentClassify" :key="index" :customStyle="item.customStyle" :num="item.num" :title="item.title"></box-inset>
           </div>
         </div>
+      </div>
+    </box-corner>
+    <box-corner :style="{width: '100%',height: '263px'}">
+      <div class="main" slot="main">
+        <box-title class="box-title" text="中国|CHINA"></box-title>
       </div>
     </box-corner>
   </div>
@@ -137,7 +142,6 @@ export default {
   .content
     position: fixed
     width 596px
-    height 600px
     right 35px
     bottom 74px
     color: $textColor-default
@@ -148,8 +152,9 @@ export default {
       display flex
       justify-content space-between
       .content-right
-        flex 1
         display flex
+        flex-wrap wrap
         justify-content space-around
+        align-content: space-between
         height 247px
 </style>
