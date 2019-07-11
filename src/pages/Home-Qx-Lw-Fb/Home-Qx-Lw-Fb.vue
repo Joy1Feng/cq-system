@@ -1,5 +1,8 @@
 <template>
-  <county-content></county-content>
+  <div class="county">
+    <county-content></county-content>
+
+  </div>
 </template>
 
 <script>
@@ -13,5 +16,6 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-
+.county
+  margin: 0 35px
 </style>
