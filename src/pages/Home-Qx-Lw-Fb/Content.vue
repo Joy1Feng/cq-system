@@ -44,7 +44,7 @@ import BoxRect from '../../components/box/BoxRect'
 import BoxInset from '../../components/box/BoxInset'
 
 export default {
-  name: 'content',
+  name: 'countyContent',
   data () {
     return {
       menuList: [
