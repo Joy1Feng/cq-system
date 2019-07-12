@@ -9,7 +9,6 @@ import HomeQxLwFb from '../pages/Home-Qx-Lw-Fb/Home-Qx-Lw-Fb'
 import HomeRate from '../pages/Home-Rate/Home-Rate'
 import LianWang from '../pages/LianWang/LianWang'
 import YunXing from '../pages/YunXing/YunXing'
-
 Vue.use(VueRouter)
 
 export default new VueRouter({
