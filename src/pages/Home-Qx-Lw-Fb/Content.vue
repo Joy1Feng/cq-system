@@ -133,6 +133,7 @@ export default {
     BoxCorner,
     BoxRect,
     BoxInset
+
   }
 }
 </script>
