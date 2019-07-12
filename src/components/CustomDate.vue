@@ -29,21 +29,29 @@ export default {
   },
   mounted () {
     this.setDate()
+    setInterval(() => {
+      this.setDate()
+    }, 1000)
   },
   methods: {
     setDate () {
-      setInterval(() => {
-        let date = new Date()
-        let dateObj = {}
+      let date = new Date()
+      let dateObj = {}
 
-        dateObj.year = date.getFullYear()
-        dateObj.month = date.getMonth() + 1
-        dateObj.day = date.getDate()
-        dateObj.hour = date.getHours()
-        dateObj.minute = date.getMinutes()
-        dateObj.second = date.getSeconds()
-        this.$set(this.dateCustom, 'dateObj', dateObj)
-      }, 1000)
+      dateObj.year = date.getFullYear()
+      dateObj.month = date.getMonth() + 1
+      dateObj.day = date.getDate()
+      dateObj.hour = date.getHours()
+      dateObj.minute = date.getMinutes()
+      dateObj.second = date.getSeconds()
+
+      for (let item in dateObj) {
+        if (item !== 'year' && dateObj[item] < 10) {
+          dateObj[item] = '0' + dateObj[item]
+        }
+      }
+
+      this.$set(this.dateCustom, 'dateObj', dateObj)
     }
   }
 }
@@ -52,10 +60,9 @@ export default {
 <style lang="stylus" scoped>
   .customDate
     display flex
-    font-size 30px
-
     .date
       display flex
+      letter-spacing 4px
       &.year
-        margin-right:18px
+        margin-right: 18px
 </style>
