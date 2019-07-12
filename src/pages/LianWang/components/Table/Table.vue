@@ -24,7 +24,30 @@
           </div>
         </div>
         <div class="yj-select">
-
+          <div class="yj-select-supervise">
+            <span>监管类别</span>
+            <span>监管类别</span>
+            <span><i class="iconfont icon-icon-arrow-bottom2"></i></span>
+          </div>
+          <div class="yj-select-risk">
+            <span>风险类型</span>
+            <span>风险类型</span>
+            <span><i class="iconfont icon-icon-arrow-bottom2"></i></span>
+          </div>
+          <div class="yj-select-subordinate">
+            <span>所属行业</span>
+            <span>所属行业</span>
+            <span><i class="iconfont icon-icon-arrow-bottom2"></i></span>
+          </div>
+          <div class="yj-select-internet">
+            <span>联网单位</span>
+            <span>单位名称</span>
+            <span><i class="iconfont icon-icon-arrow-bottom2"></i></span>
+          </div>
+          <div class="yj-select-time">
+            <span>时间</span>
+            <span>2018-07-31—2018-07-31</span>
+          </div>
         </div>
       </div>
       <div class="yj-table-content-table">
@@ -306,6 +329,153 @@
               font-size 18px
               line-height 18px
               color #cbcecd
+        .yj-select
+          height 30px
+          margin-top 12px
+          .yj-select-supervise
+            display inline-block
+            span
+              &:nth-of-type(1)
+                font-size 17px
+                line-height 28px
+                color #efefef
+                margin-left 22px
+              &:nth-of-type(2)
+                display inline-block
+                font-size 14px
+                line-height 28px
+                color #898c8b
+                padding 0 24px
+                border 1px solid #898c8b
+                margin-left 4px
+                border-right 1px solid #ffffff
+              &:nth-of-type(3)
+                display inline-block
+                height 30px
+                width 30px
+                border 1px solid #ffffff
+                margin-left -5.5px
+                position relative
+                top -2px
+                i
+                  font-size 8px
+                  line-height 0
+                  position relative
+                  top 3px
+                  left 50%
+                  margin-left -6px
+          .yj-select-risk
+            display inline-block
+            span
+              &:nth-of-type(1)
+                font-size 17px
+                line-height 28px
+                color #efefef
+                margin-left 22px
+              &:nth-of-type(2)
+                display inline-block
+                font-size 14px
+                line-height 28px
+                color #898c8b
+                padding 0 24px
+                border 1px solid #898c8b
+                margin-left 4px
+                border-right 1px solid #ffffff
+              &:nth-of-type(3)
+                display inline-block
+                height 30px
+                width 30px
+                border 1px solid #ffffff
+                margin-left -5.5px
+                position relative
+                top -2px
+                i
+                  font-size 8px
+                  line-height 0
+                  position relative
+                  top 3px
+                  left 50%
+                  margin-left -6px
+          .yj-select-subordinate
+            display inline-block
+            span
+              &:nth-of-type(1)
+                font-size 17px
+                line-height 28px
+                color #efefef
+                margin-left 22px
+              &:nth-of-type(2)
+                display inline-block
+                font-size 14px
+                line-height 28px
+                color #898c8b
+                padding 0 24px
+                border 1px solid #898c8b
+                margin-left 4px
+                border-right 1px solid #ffffff
+              &:nth-of-type(3)
+                display inline-block
+                height 30px
+                width 30px
+                border 1px solid #ffffff
+                margin-left -5.5px
+                position relative
+                top -2px
+                i
+                  font-size 8px
+                  line-height 0
+                  position relative
+                  top 3px
+                  left 50%
+                  margin-left -6px
+          .yj-select-internet
+            display inline-block
+            span
+              &:nth-of-type(1)
+                font-size 17px
+                line-height 28px
+                color #efefef
+                margin-left 22px
+              &:nth-of-type(2)
+                display inline-block
+                font-size 14px
+                line-height 28px
+                color #898c8b
+                padding 0 24px
+                border 1px solid #898c8b
+                margin-left 4px
+                border-right 1px solid #ffffff
+              &:nth-of-type(3)
+                display inline-block
+                height 30px
+                width 30px
+                border 1px solid #ffffff
+                margin-left -5.5px
+                position relative
+                top -2px
+                i
+                  font-size 8px
+                  line-height 0
+                  position relative
+                  top 3px
+                  left 50%
+                  margin-left -6px
+          .yj-select-time
+            display inline-block
+            span
+              &:nth-of-type(1)
+                font-size 17px
+                line-height 28px
+                color #efefef
+                margin-left 22px
+              &:nth-of-type(2)
+                display inline-block
+                font-size 14px
+                line-height 28px
+                color #898c8b
+                padding 0 12.5px 0 8px
+                border 1px solid #898c8b
+                margin-left 4px
       .yj-table-content-table
         table
           border 1px solid #027175
